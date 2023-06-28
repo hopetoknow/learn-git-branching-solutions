@@ -41,3 +41,30 @@ git commit
 git checkout bugFix
 git rebase main
 ```
+
+### 2.1 Detach yo' HEAD
+```
+git checkout C4
+```
+
+### 2.2 Relative Refs (^)
+```
+git checkout bugFix^
+```
+```
+git checkout C4^
+```
+
+### 2.3 Relative Refs #2 (~)
+```
+git checkout HEAD~1
+git branch -f main C6
+git branch -f bugFix HEAD~1
+```
+
+### 2.4 Reversing Changes in Git
+```
+git reset local^
+git checkout pushed
+git revert pushed
+```
