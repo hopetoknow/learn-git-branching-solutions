@@ -68,3 +68,16 @@ git reset local^
 git checkout pushed
 git revert pushed
 ```
+
+### 3.1 Cherry-pick Intro
+```
+git cherry-pick C3 C4 C7
+```
+
+### 3.2 Interactive Rebase Intro
+```
+git rebase -i HEAD~4
+```
+```
+git rebase -i overHere
+```
