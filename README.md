@@ -81,3 +81,52 @@ git rebase -i HEAD~4
 ```
 git rebase -i overHere
 ```
+
+### 4.1 Grabbing Just 1 Commit
+```
+git checkout main
+git cherry-pick C4
+```
+```
+git rebase -i main
+git checkout main
+git merge bugFix
+```
+```
+git rebase -i main
+git branch -f main C4'
+```
+
+### 4.2 Juggling Commits
+```
+git rebase -i HEAD~2
+git commit --amend
+git rebase -i HEAD~2
+git branch -f main HEAD
+```
+```
+git rebase -i main;
+git commit --amend;
+git rebase -i main;
+git rebase caption main
+```
+
+### 4.3 Juggling Commits #2
+```
+git checkout main
+git cherry-pick C2
+git commit --amend
+git cherry-pick C3
+```
+
+### 4.4 Git Tags
+```
+git tag v0 C1
+git tag v1 C2
+git checkout v1
+```
+
+### 4.5 Git Describe
+```
+git commit
+```
