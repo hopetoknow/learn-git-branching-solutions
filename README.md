@@ -130,3 +130,38 @@ git checkout v1
 ```
 git commit
 ```
+
+### 5.1 Rebasing over 9000 times
+```
+git rebase main bugFix
+git rebase bugFix side
+git rebase side another
+git rebase another main
+```
+
+### 5.2 Multiple parents
+```
+git branch bugWork C2
+``` 
+```
+git branch bugWork HEAD~^2~
+```
+```
+git branch bugWork HEAD^^2^
+```
+
+### 5.3 Branch Spaghetti
+```
+git rebase main one
+git rebase -i C1
+git rebase main two
+git rebase -i C1
+git branch -f three C2
+```
+```
+git checkout one
+git cherry-pick C4 C3 C2
+git checkout two
+git cherry-pick C5 C4 C3 C2
+git branch -f three C2
+```
