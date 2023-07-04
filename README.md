@@ -165,3 +165,64 @@ git checkout two
 git cherry-pick C5 C4 C3 C2
 git branch -f three C2
 ```
+
+## Remote
+
+### 1.1 Clone Intro
+```
+git clone
+```
+
+### 1.2 Remote Branches
+```
+git commit
+git checkout o/main
+git commit
+```
+
+### 1.3 Git Fetchin'
+```
+git fetch
+```
+
+### 1.4 Git Pullin'
+```
+git pull
+```
+
+### 1.5 Faking Teamwork
+```
+git clone
+git fakeTeamwork 2
+git commit
+git pull
+```
+
+### 1.6 Git Pushin'
+```
+git commit
+git commit
+git push
+```
+
+### 1.7 Diverged History
+```
+git clone
+git fakeTeamwork
+git commit
+git pull --rebase
+git push
+```
+
+### 1.8 Locked Main
+```
+git reset --hard o/main
+git checkout -b feature C2
+git push
+```
+```
+git branch feature main
+git reset --hard HEAD^
+git push origin feature
+git checkout feature
+```
