@@ -226,3 +226,23 @@ git reset --hard HEAD^
 git push origin feature
 git checkout feature
 ```
+
+### 2.1 Push Main!
+```
+git fetch
+git rebase o/main side1
+git rebase side1 side2
+git rebase side2 side3
+git rebase side3 main
+git push
+```
+
+### 2.2 Merging with remotes
+```
+git checkout main
+git pull
+git merge side1
+git merge side2
+git merge side3
+git push
+```
