@@ -246,3 +246,31 @@ git merge side2
 git merge side3
 git push
 ```
+
+### 2.3 Remote Tracking
+```
+git checkout -b side o/main
+git commit
+git pull --rebase
+git push
+```
+
+### 2.4 Git push arguments
+```
+git push origin main
+git push origin foo
+```
+
+### 2.5 Git push arguments -- Expanded!
+```
+git push origin foo:main
+git push origin main^:foo
+```
+
+### 2.6 Fetch arguments
+```
+git fetch origin foo:main
+git fetch origin main^:foo
+git checkout foo
+git merge main
+```
