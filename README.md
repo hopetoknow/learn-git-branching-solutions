@@ -274,3 +274,15 @@ git fetch origin main^:foo
 git checkout foo
 git merge main
 ```
+
+### 2.7 Source of nothing
+```
+git push origin :foo
+git fetch origin :bar
+```
+
+### 2.8 Pull arguments
+```
+git pull origin bar:foo
+git pull origin main:side
+```
